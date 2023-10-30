@@ -1,0 +1,10 @@
+[
+    {
+        "name": "vscode-docker",
+        "publisher": "ms-azuretools"
+    },
+    {
+        "name": "gitlens",
+        "publisher": "eamodio"
+    }
+]
