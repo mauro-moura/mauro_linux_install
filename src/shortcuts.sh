@@ -24,12 +24,12 @@ do
     echo "Doing for window: $i"
     
     TARGET_KEY="<Super>$i"
-    ./reset_shortcut.sh "$TARGET_KEY"
+    bash ./src/reset_shortcut.sh "$TARGET_KEY"
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['$TARGET_KEY']"
     echo "Set $TARGET_KEY to switch workspace"
 
     TARGET_KEY="<Shift><Super>$i"
-    ./reset_shortcut.sh "$TARGET_KEY"
+    bash ./src/reset_shortcut.sh "$TARGET_KEY"
     gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-$i "['$TARGET_KEY']"
     echo "Set $TARGET_KEY to switch workspace"
 done

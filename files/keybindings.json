@@ -2,6 +2,11 @@
     {
         "key": "ctrl+'",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "!terminalFocus"
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]

@@ -6,5 +6,21 @@
     {
         "name": "gitlens",
         "publisher": "eamodio"
+    },
+    {
+        "name": "python",
+        "publisher": "ms-python"
+    },
+    {
+        "name": "copilot",
+        "publisher": "github"
+    },
+    {
+        "name": "dracula-theme",
+        "publisher": "theme-dracula"
+    },
+    {
+        "name": "material-icon-theme",
+        "publisher": "pkief"
     }
 ]
