@@ -9,6 +9,5 @@ echo "Defining user keybindings"
 cp keybindings.json /home/$USER/.config/Code/User/keybindings.json
 
 echo "Installing VSCode extensions"
-# code --install-extension $(cat extensions.json | jq -r '.[] | .publisher + "." + .name')
-# cat extensions.json | jq -r '.[] | "code --install-extension \(.publisher).\(.name) --force"' | bash
-
+code --install-extension $(cat extensions.json | jq -r '.[] | .publisher + "." + .name')
+cat extensions.json | jq -r '.[] | "code --install-extension \(.publisher).\(.name) --force"' | bash
